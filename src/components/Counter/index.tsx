@@ -1,3 +1,4 @@
+import { css } from "@emotion/react";
 import { useState } from "react";
 
 export function Counter() {
@@ -5,9 +6,15 @@ export function Counter() {
 
   return (
     <>
-      <h1>Counter: {counter}</h1>
+      <div css={styles.counter}>Counter: {counter}</div>
 
       <button onClick={() => setCounter((prev) => prev + 1)}>Increment</button>
     </>
   );
 }
+
+const styles = {
+  counter: css`
+    color: blue;
+  `,
+};

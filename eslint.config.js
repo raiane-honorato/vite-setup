@@ -20,6 +20,7 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+      "react/no-unknown-property": ["error", { ignore: ["css"] }],
       "react-refresh/only-export-components": [
         "warn",
         { allowConstantExport: true },
