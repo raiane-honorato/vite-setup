@@ -1,13 +1,11 @@
-import { Counter } from "components/Counter";
-import { Pokemon } from "pages/Pokemon";
+import { Transactions } from "pages/Transactions";
+
 import { Route, Routes } from "react-router";
 
 function App() {
   return (
     <Routes>
-      <Route path="/counter" element={<Counter />} />
-      <Route index element={<Pokemon />} />
-      <Route path="*" element={<h1>not found</h1>} />
+      <Route index element={<Transactions />} />
     </Routes>
   );
 }
